@@ -1,8 +1,8 @@
 # Multi-robot Systems Group UAV system
 ![thumbnail](.fig/drone_collage.jpg)
 
-The [Multi-robot Systems Group](http://mrs.felk.cvut.cz) is a robotics lab at the [Czech Technical University in Prague](https://www.cvut.cz/).
-We mostly work with multi-rotor helicopters, and for them specifically, we develop this control, estimation, and simulation platform.
+
+We mostly work with multi-rotor UAVs, and for them specifically, we develop this control, estimation, and simulation platform.
 We think that real-world and replicable experiments should support excellent research and science in robotics.
 Thus our platform is built to allow safe verification of approaches in planning, control, estimation, computer vision, tracking, and more.
 
@@ -111,7 +111,7 @@ In this case we provide installation scripts that set everything up for you.
 Our automated installation will:
 * install Robot Operating System (ROS),
 * install other dependencies such *git*, *gitman*,
-* clone [uav_core](https://github.com/ctu-mrs/uav_core), [simulation](https://github.com/ctu-mrs/simulation), [example_ros_packages](https://github.com/ctu-mrs/example_ros_packages) into *~/git*,
+* clone the github into *~/git*,
 * install more dependencies such as *tmux* and *tmuxinator*
 * create our ros workspace in ```~/mrs_workspace``` for the *uav_core* and *simulation*,
 * create a ros workspace in ```~/workspace``` for *examples*,
@@ -139,10 +139,10 @@ source ~/.bashrc' > clone.sh && source clone.sh
 ### "I already have ROS and just want to peek in"
 
 If you already have ROS installed and if you are fluent with *workspaces*, *.bashrc*, *catkin tools*, etc., feel free to clone our repositories individually.
-The [uav_core](https://github.com/ctu-mrs/uav_core) repository integrates our UAV control system.
+The UAV core repository integrates our UAV control system.
 Please follow its README for further instructions on how to install its particular dependencies.
 
-The [simulation](https://github.com/ctu-mrs/simulation) repository provides resources for *Gazebo/ROS* simulation, including px4 Simulation-in-the-Loop (SITL), UAV models and useful sensor plugins.
+The Simulation repository provides resources for *Gazebo/ROS* simulation, including px4 Simulation-in-the-Loop (SITL), UAV models and useful sensor plugins.
 Please follow its README for further instructions on how to install prerequisities.
 
 ### "I want the Linux environment people from MRS works with"
@@ -163,7 +163,6 @@ cd linux-setup
 ./install.sh" > run.sh && source run.sh
 ```
 
-For help with using the system, you can also refer to the [MRS Cheatsheet](https://ctu-mrs.github.io/docs/introduction/cheatsheet.html).
 
 ## Running the simulation
-If you have successfully installed the system, you can continue with [starting the simulation](https://ctu-mrs.github.io/docs/simulation/howto.html).
+If you have successfully installed the system, you can continue with starting the simulation.
